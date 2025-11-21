@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winsper BD – Insights & Studio Notes</title>
+
+  <!-- Tailwind + icons + fonts (same as main site) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png"
+    href="https://pub-3300c9b5916741cf93f4f5daf91a3293.r2.dev/logo/newwinsper%20logo.png">
+  <link rel="apple-touch-icon" href="https://pub-3300c9b5916741cf93f4f5daf91a3293.r2.dev/logo/newwinsper%20logo.png">
+  <link rel="shortcut icon" href="https://pub-3300c9b5916741cf93f4f5daf91a3293.r2.dev/logo/newwinsper%20logo.png">
+
+  <!-- Main site styles + blog styles -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+
+<body class="antialiased">
+  <!-- HEADER (same style as main site, paths adjusted) -->
+  <header id="header"
+    class="bg-black/20 backdrop-blur-md fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-full border border-border-color shadow-2xl shadow-black/20">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16 px-3 md:px-6">
+
+        <a href="../index.html#home" class="flex items-center px-3">
+          <img src="https://pub-3300c9b5916741cf93f4f5daf91a3293.r2.dev/logo/newwinsper%20logo.png"
+            alt="Winsper BD Logo" loading="lazy"
+            class="h-8 md:h-10 w-auto drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
+        </a>
+
+        <nav class="hidden md:flex items-center md:space-x-3 lg:space-x-6">
+
+          <a href="../index.html#home"
+            class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Home</a>
+          <a href="../index.html#services"
+            class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Services</a>
+          <a href="../index.html#portfolio"
+            class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Portfolio</a>
+          <a href="../index.html#about"
+            class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">About</a>
+          <a href="blog.html"
+            class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10 bg-white/10">Blog</a>
+        </nav>
+        <a href="../index.html#contact"
+          class="hidden md:inline-block text-sm px-3 md:px-4 lg:px-5 py-2 rounded-full font-semibold text-white transition-all duration-300 transform bg-gradient-to-r ...">
+          Get In Touch
+        </a>
+
+        <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none p-2 mr-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden absolute top-20 left-0 right-0 mx-4 rounded-lg border border-border-color p-4 space-y-2 bg-[#0f101a]/80 backdrop-blur-xl">
+      <a href="../index.html#home"
+        class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Home</a>
+      <a href="../index.html#services"
+        class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Services</a>
+      <a href="../index.html#portfolio"
+        class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Portfolio</a>
+      <a href="../index.html#about"
+        class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">About</a>
+      <a href="blog.html"
+        class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Blog</a>
+      <a href="../index.html#contact"
+        class="block mt-4 text-center w-full px-6 py-3 rounded-full font-semibold text-white transition-all duration-300 transform bg-gradient-to-r from-[var(--btn-start)] to-[var(--btn-end)] shadow-[0_0_20px_rgba(139,92,246,0.5)]">
+        Get In Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- BLOG CONTENT -->
+  <main class="article-page" style="padding-top:6rem;">
+    <section class="wb-container wb-blog-hero">
+      <div class="wb-blog-hero-inner">
+        <div class="wb-blog-hero-text">
+          <span class="wb-kicker">Insights</span>
+          <h1>Studio notes on shipping better digital projects</h1>
+          <p class="wb-hero-subtitle">
+            Processes, case studies, and behind-the-scenes thinking from Winsper BD. Built for founders,
+            marketers, and teams who care about doing things properly.
+          </p>
+
+          <div class="wb-hero-actions">
+            <div class="wb-search-wrapper">
+              <input id="blog-search" type="text" placeholder="Search articles by topic or keyword…" />
+              <span class="wb-search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+
+            <div class="wb-filter-pills">
+              <button class="filter-pill is-active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="strategy">Strategy</button>
+              <button class="filter-pill" data-filter="design">Design</button>
+              <button class="filter-pill" data-filter="development">Development</button>
+              <button class="filter-pill" data-filter="marketing">Marketing</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="wb-blog-hero-side">
+          <div class="wb-hero-card">
+            <p class="wb-hero-card-label">From the studio</p>
+            <h2>From brief to breakthrough: our process for winning digital projects</h2>
+            <p>
+              The exact 4-phase framework we use at Winsper BD to turn fuzzy ideas into launch-ready
+              products.
+            </p>
+            <ul class="wb-hero-meta-list">
+              <li>7 min read</li>
+              <li>Strategy · Process</li>
+              <li>Updated Jan 2025</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wb-container wb-blog-list">
+      <div class="wb-blog-grid" id="blog-grid">
+        <!-- Card 1 -->
+        <article class="blog-card" data-category="strategy">
+          <a href="blog/articles/article1.html" class="blog-link">
+            <div class="blog-card-inner">
+              <div class="blog-meta">
+                <span class="blog-date">Jan 2025 · 7 min read</span>
+                <span class="blog-tag blog-tag--strategy">Strategy</span>
+              </div>
+              <h2 class="blog-title">
+                From brief to breakthrough: our process for winning digital projects
+              </h2>
+              <p class="blog-excerpt">
+                How we take messy ideas from founders and teams and turn them into a clear,
+                launch-ready roadmap that design, development, and marketing can all execute on.
+              </p>
+              <div class="blog-footer">
+                <span>Winsper BD Studio Notes</span>
+                <button class="blog-read-btn">Read article</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- You can duplicate and adjust these cards for more posts -->
+        <article class="blog-card" data-category="design">
+          <a href="#" class="blog-link">
+            <div class="blog-card-inner">
+              <div class="blog-meta">
+                <span class="blog-date">Dec 2024 · 5 min read</span>
+                <span class="blog-tag blog-tag--design">Design</span>
+              </div>
+              <h2 class="blog-title">Wireframes that actually move projects forward</h2>
+              <p class="blog-excerpt">
+                A practical checklist for turning wireframes into a shared source of truth between
+                founders, designers, and developers.
+              </p>
+              <div class="blog-footer">
+                <span>UX & product design</span>
+                <button class="blog-read-btn">Read article</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="marketing">
+          <a href="#" class="blog-link">
+            <div class="blog-card-inner">
+              <div class="blog-meta">
+                <span class="blog-date">Nov 2024 · 6 min read</span>
+                <span class="blog-tag blog-tag--marketing">Marketing</span>
+              </div>
+              <h2 class="blog-title">Launching smarter: campaigns that respect your budget</h2>
+              <p class="blog-excerpt">
+                How we pair conversion-ready landing pages with lean paid campaigns to validate ideas
+                before you overspend.
+              </p>
+              <div class="blog-footer">
+                <span>Acquisition & funnels</span>
+                <button class="blog-read-btn">Read article</button>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (same as main site, paths adjusted) -->
+  <footer class="border-t border-border-color bg-dark/50">
+    <div class="container mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="col-span-1">
+          <h3 class="text-2xl font-bold text-white">Winsper BD</h3>
+          <p class="mt-2 text-text-secondary pr-8">Shaping stunning interactive experiences.</p>
+          <div class="mt-6 flex space-x-4">
+            <a href="https://x.com/WinsperBD" class="text-text-secondary hover:text-white">
+              <span class="sr-only">Twitter</span>
+              <i class="fa-brands fa-x-twitter w-6 h-6"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/winsper-bd" class="text-text-secondary hover:text-white">
+              <span class="sr-only">LinkedIn</span>
+              <i class="fa-brands fa-linkedin w-6 h-6"></i>
+            </a>
+            <a href="https://github.com/winsperbd" class="text-text-secondary hover:text-white">
+              <span class="sr-only">GitHub</span>
+              <i class="fa-brands fa-github w-6 h-6"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2">
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-sm font-semibold tracking-wider uppercase text-text-secondary">Navigate</h3>
+              <ul class="mt-4 space-y-2">
+                <li><a href="../index.html#home" class="text-base text-text-primary hover:text-white">Home</a></li>
+                <li><a href="../index.html#services" class="text-base text-text-primary hover:text-white">Services</a>
+                </li>
+                <li><a href="../index.html#portfolio" class="text-base text-text-primary hover:text-white">Portfolio</a>
+                </li>
+                <li><a href="../index.html#about" class="text-base text-text-primary hover:text-white">About</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold tracking-wider uppercase text-text-secondary">Legal</h3>
+              <ul class="mt-4 space-y-2">
+                <li><a href="../index.html#privacy-policy" class="text-base text-text-primary hover:text-white">Privacy
+                    Policy</a></li>
+                <li><a href="../index.html#terms-conditions" class="text-base text-text-primary hover:text-white">Terms
+                    of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-border-color text-center text-text-secondary">
+        <p>&copy; Winsper BD. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple JS for mobile menu -->
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.classList.contains('hidden') &&
+          !mobileMenu.contains(e.target) &&
+          !mobileBtn.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+
+  <!-- Blog behaviour (search + filters + card click) -->
+  <script src="blog.js"></script>
+</body>
+
+</html>
